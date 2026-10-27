@@ -1,0 +1,218 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Community - Home</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .home {
+            min-height: 420px;
+            padding: 100px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background:
+                linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.8)),
+                url("https://images.unsplash.com/photo-1546519638-68e109498ffc?w=1600")
+                center/cover no-repeat;
+        }
+
+        .home h1 {
+            font-size: clamp(32px, 5vw, 52px);
+            color: orange;
+            margin-bottom: 10px;
+        }
+
+        .home p {
+            font-size: 19px;
+            color: #eeeeee;
+            max-width: 600px;
+        }
+
+        .home-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 28px;
+            background: orange;
+            color: #111;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .home-button:hover {
+            background: white;
+            transform: translateY(-3px);
+        }
+
+        .welcome {
+            padding: 55px 20px;
+            text-align: center;
+        }
+
+        .welcome h2 {
+            color: orange;
+            font-size: 30px;
+        }
+
+        .welcome p {
+            max-width: 700px;
+            margin: 15px auto;
+            line-height: 1.8;
+            color: #cccccc;
+        }
+
+        .highlights {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 20px 20px 70px;
+        }
+
+        .highlight-card {
+            background: #222;
+            padding: 30px 20px;
+            width: 230px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+
+        .highlight-card:hover {
+            border-color: orange;
+            transform: translateY(-5px);
+        }
+
+        .highlight-card .icon {
+            font-size: 40px;
+        }
+
+        .highlight-card h3 {
+            color: orange;
+        }
+
+        .highlight-card p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .highlight-card a {
+            color: orange;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .home {
+                padding: 80px 20px;
+            }
+
+            .highlight-card {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>🏀 BASKETBALL COMMUNITY</h2>
+        <a href="index.html">Home</a>
+        <a href="profile.html">My Profile</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <!-- Main Homepage -->
+    <section class="home">
+        <h1>WELCOME TO BASKETBALL COMMUNITY</h1>
+
+        <p><strong>Play. Connect. Compete.</strong></p>
+
+        <p>
+            A community for basketball players and fans.
+            Share your passion, meet fellow basketball lovers,
+            and celebrate the game together.
+        </p>
+
+        <a href="profile.html" class="home-button">
+            Explore Our Community 🏀
+        </a>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <h2>More Than Just a Game</h2>
+
+        <p>
+            Basketball brings people together through teamwork,
+            friendship, discipline, and sportsmanship. Our community
+            celebrates everyone who loves the game, whether you play
+            on the court or support your favorite team.
+        </p>
+
+        <p>
+            Discover basketball photos, learn about our community,
+            and connect with the sport that brings us together.
+        </p>
+    </section>
+
+    <!-- Homepage Highlights -->
+    <div class="highlights">
+
+        <div class="highlight-card">
+            <div class="icon">👤</div>
+            <h3>My Profile</h3>
+            <p>
+                Get to know the basketball enthusiast behind
+                this community website.
+            </p>
+            <a href="profile.html">View Profile →</a>
+        </div>
+
+        <div class="highlight-card">
+            <div class="icon">📸</div>
+            <h3>Basketball Gallery</h3>
+            <p>
+                Explore basketball photos, players, jerseys,
+                and memorable moments.
+            </p>
+            <a href="gallery.html">View Gallery →</a>
+        </div>
+
+        <div class="highlight-card">
+            <div class="icon">🏀</div>
+            <h3>About Us</h3>
+            <p>
+                Learn about our basketball community and
+                the values that make the sport special.
+            </p>
+            <a href="about.html">Learn More →</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Basketball Community</p>
+        <p>Made with ❤️ for Basketball Fans</p>
+    </footer>
+
+</body>
+</html>
